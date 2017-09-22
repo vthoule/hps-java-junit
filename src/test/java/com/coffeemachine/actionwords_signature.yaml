@@ -37,11 +37,6 @@
   uid: 0be4d850-f88a-4291-99d8-bcecfe72c13f
   parameters: []
   body_hash: 6c8455b47f7300c09bd7ff55ba77851e
-- name: I take "coffee_number" coffees
-  uid: 023fe532-3005-4f69-a1a1-0753b59859da
-  parameters:
-  - name: coffee_number
-  body_hash: d41d8cd98f00b204e9800998ecf8427e
 - name: the coffee machine is started
   uid: 6d6488b6-05e3-4dc2-b7f5-d8d53f49ce5c
   parameters: []
@@ -83,4 +78,13 @@
   uid: c45001c1-5c85-4044-98ff-ba6ae39d1dd1
   parameters:
   - name: __datatable
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: a notification about descaling is displayed
+  uid: 90a3d888-85f9-4e96-9bcf-23a45992159e
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: I take "coffee_number" coffees
+  uid: 3bb9a54e-c211-41ab-bcba-7d83f361dc91
+  parameters:
+  - name: coffee_number
   body_hash: d41d8cd98f00b204e9800998ecf8427e

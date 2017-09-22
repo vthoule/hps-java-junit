@@ -18,16 +18,12 @@ public class GroundsTest extends TestCase {
     // 
     // Tags: priority:high
     public void testMessageEmptyGroundsIsDisplayedAfter30CoffeesAreTaken() {
-        // When I take "30" coffees
-        actionwords.iTakeCoffeeNumberCoffees(30);
         // Then message "Empty grounds" should be displayed
         actionwords.messageMessageShouldBeDisplayed("Empty grounds");
     }
     // 
     // Tags: priority:medium
     public void testWhenTheGroundsAreEmptiedMessageIsRemoved() {
-        // When I take "30" coffees
-        actionwords.iTakeCoffeeNumberCoffees(30);
         // And I empty the coffee grounds
         actionwords.iEmptyTheCoffeeGrounds();
         // Then message "Ready" should be displayed

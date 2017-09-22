@@ -18,16 +18,12 @@ public class WaterTest extends TestCase {
     // 
     // Tags: priority:high
     public void testMessageFillWaterTankIsDisplayedAfter50CoffeesAreTaken() {
-        // When I take "50" coffees
-        actionwords.iTakeCoffeeNumberCoffees(50);
         // Then message "Fill tank" should be displayed
         actionwords.messageMessageShouldBeDisplayed("Fill tank");
     }
     // 
     // Tags: priority:low
     public void testItIsPossibleToTake10CoffeesAfterTheMessageFillWaterTankIsDisplayed() {
-        // When I take "60" coffees
-        actionwords.iTakeCoffeeNumberCoffees(60);
         // Then coffee should be served
         actionwords.coffeeShouldBeServed();
         // When I take a coffee
@@ -38,8 +34,6 @@ public class WaterTest extends TestCase {
     // 
     // Tags: priority:high
     public void testWhenTheWaterTankIsFilledTheMessageDisappears() {
-        // When I take "55" coffees
-        actionwords.iTakeCoffeeNumberCoffees(55);
         // And I fill the water tank
         actionwords.iFillTheWaterTank();
         // Then message "Ready" should be displayed

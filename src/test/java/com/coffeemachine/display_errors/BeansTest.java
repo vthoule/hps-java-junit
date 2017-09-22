@@ -26,8 +26,8 @@ public class BeansTest extends TestCase {
     // 
     // Tags: priority:low
     public void testItIsPossibleToTake40CoffeesBeforeThereIsReallyNoMoreBeans() {
-        // When I take "40" coffees
-        actionwords.iTakeCoffeeNumberCoffees(40);
+        // When I take "500" coffees
+        actionwords.iTakeCoffeeNumberCoffees(500);
         // Then coffee should be served
         actionwords.coffeeShouldBeServed();
         // When I take a coffee
@@ -40,8 +40,6 @@ public class BeansTest extends TestCase {
     // 
     // Tags: priority:high
     public void testAfterAddingBeansTheMessageFillBeansDisappears() {
-        // When I take "40" coffees
-        actionwords.iTakeCoffeeNumberCoffees(40);
         // And I fill the beans tank
         actionwords.iFillTheBeansTank();
         // Then message "Ready" should be displayed

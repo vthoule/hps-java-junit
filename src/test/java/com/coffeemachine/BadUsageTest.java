@@ -12,8 +12,6 @@ public class BadUsageTest extends TestCase {
         actionwords.theCoffeeMachineIsStarted();
         // And I handle everything except the grounds
         actionwords.iHandleEverythingExceptTheGrounds();
-        // When I take "50" coffees
-        actionwords.iTakeCoffeeNumberCoffees(50);
         // Then message "Empty grounds" should be displayed
         actionwords.messageMessageShouldBeDisplayed("Empty grounds");
         // And coffee should be served
